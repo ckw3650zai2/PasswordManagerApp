@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/icon5"
+    android:label="@string/home"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_head1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/passlocklogo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_head2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textUri|textWebPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF03DAC5"
+                android:text="Websites"
+                android:textColorHighlight="#803333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF03DAC5"
+                android:text="Username"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF03DAC5"
+                android:text="Password"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#FF03DAC5"
+                android:text="Actions"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+    
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_appbar"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="10dp"
+                app:fabCradleVerticalOffset="10dp"
+                >
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                app:layout_anchor="@id/btn_appbar"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

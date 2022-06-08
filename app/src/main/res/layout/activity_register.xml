@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/icon4"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/ll_body_main"
+            android:layout_width="0dp"
+            android:layout_height="161dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textFilter"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColorHint="#151414" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:textAlignment="center"
+                android:textColorHint="#1C1B1B" />
+
+            <EditText
+                android:id="@+id/et_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Re-enter password"
+                android:inputType="textWebPassword"
+                android:textAlignment="center"
+                android:textColorHint="#1C1A1A" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:layout_margin="20px"
+                android:backgroundTint="#EC4B81"
+                android:text="Register"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
